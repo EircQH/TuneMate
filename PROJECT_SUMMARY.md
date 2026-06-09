@@ -318,6 +318,13 @@ D:/Andriod-SDK/platform-tools/adb install -r build/app/outputs/flutter-apk/app-r
 flutter doctor
 ```
 
+### APK 产物路径
+
+| 位置 | 路径 |
+|------|------|
+| 本地构建输出 | `D:\AI_Explore\TuneMate\build\app\outputs\flutter-apk\app-release.apk` |
+| GitHub Release | https://github.com/EircZq034/TuneMate/releases |
+
 ---
 
 ## 已安装组件清单 (含路径，便于卸载)
