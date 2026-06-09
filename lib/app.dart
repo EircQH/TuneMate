@@ -6,7 +6,7 @@ import 'providers/settings_provider.dart';
 import 'providers/tuning_provider.dart';
 import 'providers/fretboard_provider.dart';
 import 'providers/chord_provider.dart';
-import 'screens/home_screen.dart';
+import 'screens/splash_screen.dart';
 
 class TuneMateApp extends StatelessWidget {
   const TuneMateApp({super.key});
@@ -31,7 +31,7 @@ class TuneMateApp extends StatelessWidget {
             theme: _buildLightTheme(),
             darkTheme: _buildDarkTheme(),
             themeMode: settings.themeMode,
-            home: const HomeScreen(),
+            home: const SplashScreen(),
           );
         },
       ),

@@ -27,4 +27,5 @@ flutter:
   generate: true
 
   assets:
+    - images/
     - assets/images/chords/
