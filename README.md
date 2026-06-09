@@ -42,17 +42,40 @@
 | UI 绘制 | Canvas CustomPaint |
 | 国际化 | flutter_localizations + intl |
 
-## 构建运行
+## 安装使用
+
+### 📱 Android 手机
+
+直接从 [Releases](../../releases) 页面下载最新 `app-release.apk`，传到手机安装即可。
+
+> 安装时需要允许"安装未知来源应用"。如果系统提示安全风险，选择"继续安装"或"信任此来源"。
+
+**系统要求**：Android 5.0 (API 21) 及以上
+
+### 💻 Windows 电脑
+
+#### 方式一：下载预构建程序（推荐）
+
+从 [Releases](../../releases) 页面下载最新的 `tunemate-windows.zip`，解压后双击 `tunemate.exe` 即可运行，无需安装任何开发环境。
+
+> 系统要求：Windows 10 及以上，64 位
+
+#### 方式二：从源码构建
+
+需要安装 Flutter 开发环境：
+
+- [Flutter SDK](https://docs.flutter.dev/get-started/install/windows) (3.44.1+)
+- [Visual Studio 2022](https://visualstudio.microsoft.com/zh-hans/)（勾选"使用 C++ 的桌面开发"）
+- [Android Studio](https://developer.android.com/studio)（仅 Android 构建需要）
 
 ```bash
 # Windows 桌面
-flutter run -d windows --release
+flutter build windows --release
+# 输出: build/windows/x64/runner/Release/tunemate.exe
 
-# Android
-flutter run -d android --release
-
-# 构建 APK
+# Android APK
 flutter build apk --release
+# 输出: build/app/outputs/flutter-apk/app-release.apk
 ```
 
 ## 项目结构
